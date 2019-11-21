@@ -1,0 +1,14 @@
+{% include 'snippet' %}
+
+{%- assign variable = 'value' | append: ' ' | sort -%}
+
+{%- for value in array -%}
+    <p>{{ value }}</p>
+
+    {%- if value == 12 %}
+        <p>{{ array }}</p>
+        <hr>
+    {% endif -%}
+
+    <hr>
+{%- endfor -%}
