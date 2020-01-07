@@ -1,4 +1,5 @@
 const { concat } = require('prettier').doc.builders;
+const LiquidTagHandler = require('./handlers/Liquid');
 
 const printers = {
     'liquid-ast': {
@@ -9,7 +10,11 @@ const printers = {
                 return concat(path.map(print));
             }
 
-            return node.raw;
+            if (node.type === 'html') {
+                return node.raw;
+            }
+
+            return new LiquidTagHandler(path).render();
         }
     }
 };

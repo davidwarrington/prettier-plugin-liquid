@@ -1,6 +1,21 @@
-{% include 'snippet' %}
+{%-assign var = true | sort-%}
+{%-assign var=true | sort-%}
+{%-assign var=true| sort-%}
+{%-assign var=true|sort-%}
+
+{%render 'snippet'%}
+{%render 'snippet' %}
+{% render 'snippet'%}
+{% render 'snippet' %}
+{% render  'snippet' %}
+{% render
+    'snippet' -%}
+        {% render 'snippet' %}
+
 
 {%- assign variable = 'value' | append: ' ' | sort -%}
+{%- assign variable = 'value' | append: ' ' -%}
+{%- assign variable = 'value' -%}
 
 {%- for value in array -%}
     <p>{{ value }}</p>
