@@ -1,5 +1,9 @@
 # Prettier Plugin Liquid
 
+**Status: Archived**
+
+This project has long been abandoned. If you're looking for a Liquid formatter I encourage you to take a look at the highly configurable [Prettify](https://github.com/panoply/prettify) or the official [prettier-plugin-liquid](https://github.com/shopify/prettier-plugin-liquid) from Shopify.
+
 ## Rules
 * ### Separate tokens with whitespace
     ```liquid
